@@ -4,9 +4,10 @@
              x:Class="ErikDetail.Stranitsi.Itogi">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Подведя итоги, можно сказать то, что данное приложение помогает быстро найти формулу и прочитать про любую фигуру, которая есть в приложении."
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Image Source="figures.jpg" VerticalOptions="CenterAndExpand"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

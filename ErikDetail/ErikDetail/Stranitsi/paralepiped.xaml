@@ -4,9 +4,11 @@
              x:Class="ErikDetail.Stranitsi.paralepiped">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Это называется параллелепипед. Нажми на кнопку чтобы перейти по ссылке и узнать подробнее про параллелепипед"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Button x:Name="paral" BackgroundColor="Red" Text="Сайт про параллепипед" Clicked="paral_Clicked"></Button>
+            <Image Source="paral.jpg" VerticalOptions="CenterAndExpand"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

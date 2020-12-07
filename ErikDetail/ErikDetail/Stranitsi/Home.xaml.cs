@@ -15,7 +15,12 @@ namespace ErikDetail.Stranitsi
         public Home()
         {
             InitializeComponent();
+            BackgroundColor = Color.DarkCyan;
+        }
 
+        private void imgbtn_Clicked(object sender, EventArgs e)
+        {
+            lbl1.Text = "Секретик :)";
         }
     }
 }

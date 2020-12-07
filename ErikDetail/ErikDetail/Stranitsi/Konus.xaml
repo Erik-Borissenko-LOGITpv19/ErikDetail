@@ -4,9 +4,11 @@
              x:Class="ErikDetail.Stranitsi.Konus">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Это называется конус. Нажми на кнопку чтобы перейти по ссылке и узнать подробнее про конус."
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Image Source="conefigure.png" VerticalOptions="CenterAndExpand"></Image>
+            <Button x:Name="ConeFurmula" BackgroundColor="Red" Text="Сайт про конус" Clicked="ConeFurmula_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

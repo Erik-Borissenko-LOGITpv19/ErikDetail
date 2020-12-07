@@ -4,9 +4,12 @@
              x:Class="ErikDetail.Stranitsi.Home">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Приветствую тебя в моем приложении. Тут ты узнаешь про различные фигуры. Переходя по сайтам ты сможешь найти различную информацию, например формулу, которая сможет тебе помочь в неожиданный тебе момент! Удач!"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+          
+            <ImageButton x:Name="imgbtn" Clicked="imgbtn_Clicked" Source="matematika.jpg"></ImageButton>
+            <Label x:Name="lbl1" Text="Опа, ты нашел секретик!" IsVisible="true"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

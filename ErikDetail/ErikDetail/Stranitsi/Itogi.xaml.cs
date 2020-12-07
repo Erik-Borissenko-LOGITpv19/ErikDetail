@@ -15,6 +15,7 @@ namespace ErikDetail.Stranitsi
         public Itogi()
         {
             InitializeComponent();
+            BackgroundColor = Color.DarkCyan;
         }
     }
 }

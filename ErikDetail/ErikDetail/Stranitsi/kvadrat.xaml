@@ -4,9 +4,11 @@
              x:Class="ErikDetail.Stranitsi.kvadrat">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Это называется квадрат. Нажми на кнопку чтобы перейти по ссылке и узнать подробнее про квадрат."
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Button x:Name="CubeFigure" BackgroundColor="Red" Text="Сайт про квадрат" Clicked="CubeFigure_Clicked"></Button>
+            <Image Source="cubefigure.png" VerticalOptions="CenterAndExpand"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

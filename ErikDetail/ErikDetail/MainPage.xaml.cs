@@ -23,13 +23,12 @@ namespace ErikDetail
 
         public List<Classnumber1> GetMenuList()
         {
-            var list = new List<Classnumber1>();
             //---------------------------------------------------------------------------------------
+            var list = new List<Classnumber1>();
 
             list.Add(new Classnumber1()
             {
                 Text = "Конус",
-                Detail = "Это называется конусом",
                 ImagePath = "cone.ico",
                 TargetPage = typeof(Stranitsi.Konus)
             });
@@ -38,7 +37,6 @@ namespace ErikDetail
             list.Add(new Classnumber1()
             {
                 Text = "Круг",
-                Detail = "Это называется кругом",
                 ImagePath = "Circle.ico",
                 TargetPage = typeof(Stranitsi.kryg)
             });
@@ -47,7 +45,6 @@ namespace ErikDetail
             list.Add(new Classnumber1()
             {
                 Text = "Квадрат",
-                Detail = "Это называется квадрат",
                 ImagePath = "Kvadrat.ico",
                 TargetPage = typeof(Stranitsi.kvadrat)
             });
@@ -55,7 +52,6 @@ namespace ErikDetail
             list.Add(new Classnumber1()
             {
                 Text = "Овал",
-                Detail = "Это называется овал",
                 ImagePath = "Oval.ico",
                 TargetPage = typeof(Stranitsi.oval)
             });
@@ -63,7 +59,6 @@ namespace ErikDetail
             list.Add(new Classnumber1()
             {
                 Text = "Параллепепипед",
-                Detail = "Это называется параллелепипедом",
                 ImagePath = "parallepipped.ico",
                 TargetPage = typeof(Stranitsi.paralepiped)
             });
@@ -71,7 +66,6 @@ namespace ErikDetail
             list.Add(new Classnumber1()
             {
                 Text = "Прямоугольник",
-                Detail = "Это называется прямоугольником",
                 ImagePath = "prjamoygolnik.ico",
                 TargetPage = typeof(Stranitsi.Pramoygolnik)
             });
@@ -79,24 +73,21 @@ namespace ErikDetail
             list.Add(new Classnumber1()
             {
                 Text = "Ромб",
-                Detail = "Это называется ромбом",
-                ImagePath = "romb.ico",
+                ImagePath = "romb.png",
                 TargetPage = typeof(Stranitsi.Romb)
             });
             //---------------------------------------------------------------------------------------
             list.Add(new Classnumber1()
             {
                 Text = "Треугольник",
-                Detail = "Это называется треугольником",
-                ImagePath = "triangle.ico",
+                ImagePath = "triangle.png",
                 TargetPage = typeof(Stranitsi.treygolnik)
             });
             //---------------------------------------------------------------------------------------
             list.Add(new Classnumber1()
             {
                 Text = "Итоги",
-                Detail = "А это уже итоги :)",
-                ImagePath = "itogi.ico",
+                ImagePath = "star.png",
                 TargetPage = typeof(Stranitsi.Itogi)
             });
             //---------------------------------------------------------------------------------------
@@ -105,7 +96,10 @@ namespace ErikDetail
         
         private void mainpage_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            var selectedMenuItem = (Classnumber1)e.SelectedItem;
+            Type selectedPage = selectedMenuItem.TargetPage;
+            Detail = new NavigationPage((Page)Activator.CreateInstance(selectedPage));
+            IsPresented = false;
         }
     }
 }

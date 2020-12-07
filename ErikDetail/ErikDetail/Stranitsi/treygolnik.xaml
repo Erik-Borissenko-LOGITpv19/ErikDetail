@@ -4,9 +4,11 @@
              x:Class="ErikDetail.Stranitsi.treygolnik">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Это называется треугольник. Нажми на кнопку чтобы перейти по ссылке и узнать подробнее про треугольник."
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Button x:Name="Triangle" BackgroundColor="Red" Text="Сайт про треугольник" Clicked="Triangle_Clicked"></Button>
+            <Image Source="trianglefig.png" VerticalOptions="CenterAndExpand"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

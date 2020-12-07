@@ -4,9 +4,11 @@
              x:Class="ErikDetail.Stranitsi.Pramoygolnik">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Это называется прямоугольник. Нажми на кнопку чтобы перейти по ссылке и узнать подробнее про прямоугольник."
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Button x:Name="prjamoygolnik" BackgroundColor="Red" Text="Сайт про прямоугольник" Clicked="prjamoygolnik_Clicked"></Button>
+            <Image Source="prjamfigure.png" VerticalOptions="CenterAndExpand"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
