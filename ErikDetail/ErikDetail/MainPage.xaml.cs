@@ -91,15 +91,21 @@ namespace ErikDetail
                 TargetPage = typeof(Stranitsi.Itogi)
             });
             //---------------------------------------------------------------------------------------
+            list.Add(new Classnumber1()
+            {
+                Text = "Grid Page",
+                ImagePath = "plusicon.png",
+                TargetPage = typeof(Stranitsi.gridpagee)
+            });
+            //---------------------------------------------------------------------------------------
             return list;
         }
-        
         private void mainpage_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var selectedMenuItem = (Classnumber1)e.SelectedItem;
             Type selectedPage = selectedMenuItem.TargetPage;
-            Detail = new NavigationPage((Page)Activator.CreateInstance(selectedPage));
             IsPresented = false;
+            Detail = new NavigationPage((Page)Activator.CreateInstance(selectedPage));
         }
     }
 }

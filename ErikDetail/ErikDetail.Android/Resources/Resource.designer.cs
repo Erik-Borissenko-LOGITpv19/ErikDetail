@@ -8397,31 +8397,34 @@ namespace ErikDetail.Droid
 			public const int parallepipped = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int prjamfigure = 2131165314;
+			public const int plusicon = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int prjamoygolnik = 2131165315;
+			public const int prjamfigure = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int romb = 2131165316;
+			public const int prjamoygolnik = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int rombfig = 2131165317;
+			public const int romb = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int star = 2131165318;
+			public const int rombfig = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int tooltip_frame_dark = 2131165319;
+			public const int star = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int tooltip_frame_light = 2131165320;
+			public const int tooltip_frame_dark = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int triangle = 2131165321;
+			public const int tooltip_frame_light = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int trianglefig = 2131165322;
+			public const int triangle = 2131165322;
+			
+			// aapt resource value: 0x7F07008B
+			public const int trianglefig = 2131165323;
 			
 			static Drawable()
 			{

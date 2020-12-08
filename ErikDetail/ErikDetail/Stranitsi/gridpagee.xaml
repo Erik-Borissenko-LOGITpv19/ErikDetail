@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ErikDetail.Stranitsi.gridpagee">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Дополнительно." FontSize="Title" TextColor="Black"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <DatePicker MinimumDate="01/01/2020" MaximumDate="12/31/2020" Date="06/21/2020" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"></DatePicker>
+            <TimePicker HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand"></TimePicker>
+            <Entry x:Name="firstnumber" Text="Введи сюда число"></Entry>
+            <Entry x:Name="secondnubmer" Text="Введи сюда второе число"></Entry>
+            <Label x:Name="resultlabel" Text="Тут твой ответ!"></Label>
+            <Button x:Name="pod4et" Text="нажми сюда, чтобы посчитать." BackgroundColor="DarkMagenta" Clicked="pod4et_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -16,6 +16,7 @@ namespace ErikDetail.Stranitsi
         {
             InitializeComponent();
             BackgroundColor = Color.DarkCyan;
+            
         }
     }
 }
